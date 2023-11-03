@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuan7 - latihan1</title>
+</head>
+<style>
+    div {
+        width: 150px;
+        height: 150px;
+        margin: 50px auto;
+    }
+
+    .kotak1 {
+        width: 150px;
+        height: 150px;
+        background-color: salmon;
+        margin: 50px auto;
+        border-radius: 50% 50% 50% 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .kotak2 {
+        background-color: lightblue;
+        /* box-shadow: <x-offset> <y-offset> <blur> [size] <color>; */
+        box-shadow: 0 0 0 10px red, 0 0 0 20px lightblue, 0 0 0 30px lightseagreen, 0 0 0 40px palevioletred;
+        border-radius: 30px;
+        transition: 3s
+    }
+
+    .kotak2:hover {
+        transform: rotate(720deg) scale(20%);
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <div class="kotak1">
+        <p>Hallo saya firda</p>
+    </div>
+    <div class="kotak2"></div>
+</body>
+
+</html>
